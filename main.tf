@@ -3,8 +3,8 @@
 
 provider "aws" {
   region = var.region
-  access_key = "AKIAWUWO6YYLSGL56VMP"
-  secret_key = "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"
+  access_key = var.aws_key
+  secret_key = var.aws_secret
 }
 
 data "aws_availability_zones" "available" {}
